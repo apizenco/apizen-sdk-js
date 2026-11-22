@@ -1,4 +1,4 @@
-# sdk-js
+# apizen-sdk-js
 
 ## Commits and comments
 

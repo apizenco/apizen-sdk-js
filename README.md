@@ -1,13 +1,13 @@
-# @apizen/sdk
+# apizen
 
 SDK oficial das APIs da [Apizen](https://www.apizen.com.br): CNPJ (Receita Federal, inclusive o CNPJ alfanumérico) e CEP (com código IBGE e coordenadas). Sem dependências; Node 18+, Bun, Deno e funções de borda.
 
 ```bash
-npm install @apizen/sdk
+npm install apizen
 ```
 
 ```ts
-import { Apizen, isValidCnpj } from "@apizen/sdk";
+import { Apizen, isValidCnpj } from "apizen";
 
 const apizen = new Apizen({
   cnpjKey: process.env.CNPJ_API_KEY,

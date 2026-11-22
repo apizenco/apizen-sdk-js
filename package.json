@@ -1,10 +1,10 @@
 {
-  "name": "@apizen/sdk",
+  "name": "apizen",
   "version": "0.1.0",
   "description": "SDK oficial das APIs da Apizen: CNPJ (Receita Federal) e CEP (com código IBGE e coordenadas).",
   "keywords": ["cnpj", "cep", "receita federal", "ibge", "brasil", "api", "cnpj alfanumerico"],
   "homepage": "https://www.apizen.com.br/docs/sdks",
-  "repository": { "type": "git", "url": "git+https://github.com/apizenco/sdk-js.git" },
+  "repository": { "type": "git", "url": "git+https://github.com/apizenco/apizen-sdk-js.git" },
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
