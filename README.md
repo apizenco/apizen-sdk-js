@@ -32,3 +32,7 @@ As chaves são secretas: use o SDK no servidor, nunca no navegador. Crie as suas
 - `isValidCnpj`, `cleanCnpj`, `maskCnpj`: CNPJ numérico e alfanumérico, sem rede.
 
 Documentação: [apizen.com.br/docs](https://www.apizen.com.br/docs/inicio).
+
+## Publicar uma versão
+
+Mude `version` no `package.json`, faça o commit e crie a tag `v<versão>` (`git tag v0.1.1 && git push origin v0.1.1`): o workflow `publish` testa e publica no npm.
