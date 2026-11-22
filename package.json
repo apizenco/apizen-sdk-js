@@ -1,22 +1,44 @@
 {
   "name": "apizen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SDK oficial das APIs da Apizen: CNPJ (Receita Federal) e CEP (com código IBGE e coordenadas).",
-  "keywords": ["cnpj", "cep", "receita federal", "ibge", "brasil", "api", "cnpj alfanumerico"],
+  "keywords": [
+    "cnpj",
+    "cep",
+    "receita federal",
+    "ibge",
+    "brasil",
+    "api",
+    "cnpj alfanumerico"
+  ],
   "homepage": "https://www.apizen.com.br/docs/sdks",
-  "repository": { "type": "git", "url": "git+https://github.com/apizenco/apizen-sdk-js.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apizenco/apizen-sdk-js.git"
+  },
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
-  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --test test/*.test.js",
     "prepublishOnly": "npm test"
   },
-  "devDependencies": { "typescript": "^5.9.0" }
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
 }
