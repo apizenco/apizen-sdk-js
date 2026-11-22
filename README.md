@@ -1,6 +1,6 @@
 # apizen
 
-SDK oficial das APIs da [Apizen](https://www.apizen.com.br): CNPJ (Receita Federal, inclusive o CNPJ alfanumérico) e CEP (com código IBGE e coordenadas). Sem dependências; Node 18+, Bun, Deno e funções de borda.
+SDK oficial das APIs da [Apizen](https://apizen.com.br): CNPJ (Receita Federal, inclusive o CNPJ alfanumérico) e CEP (com código IBGE e coordenadas). Sem dependências; Node 18+, Bun, Deno e funções de borda.
 
 ```bash
 npm install apizen
@@ -25,13 +25,13 @@ const cep = await apizen.cep("01001-000");
 console.log(cep?.municipio.codigo_ibge, cep?.localizacao);
 ```
 
-As chaves são secretas: use o SDK no servidor, nunca no navegador. Crie as suas grátis em [apizen.com.br/entrar](https://www.apizen.com.br/entrar).
+As chaves são secretas: use o SDK no servidor, nunca no navegador. Crie as suas grátis em [apizen.com.br/entrar](https://apizen.com.br/entrar).
 
 - `cnpj(cnpj)`, `cnpjNome(cnpj)`, `cep(cep)`: o recurso, ou `null` quando não existe (404).
 - Outros erros (chave inválida, formato errado) lançam `ApizenError`, com `status`.
 - `isValidCnpj`, `cleanCnpj`, `maskCnpj`: CNPJ numérico e alfanumérico, sem rede.
 
-Documentação: [apizen.com.br/docs](https://www.apizen.com.br/docs/inicio).
+Documentação: [apizen.com.br/docs](https://apizen.com.br/docs/inicio).
 
 ## Publicar uma versão
 

@@ -11,7 +11,7 @@
     "api",
     "cnpj alfanumerico"
   ],
-  "homepage": "https://www.apizen.com.br/docs/sdks",
+  "homepage": "https://apizen.com.br/docs/sdks",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/apizenco/apizen-sdk-js.git"
