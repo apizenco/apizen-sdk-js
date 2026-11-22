@@ -1,6 +1,6 @@
 {
   "name": "apizen",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "SDK oficial das APIs da Apizen: CNPJ (Receita Federal) e CEP (com código IBGE e coordenadas).",
   "keywords": [
     "cnpj",
