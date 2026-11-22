@@ -1,8 +1,8 @@
 name: publish
 
-# A v* tag publishes that version to npm as "apizen". Trusted publishing (OIDC): npm trusts
-# this workflow of this repository, so no token is stored anywhere. Provenance (--provenance)
-# needs a public repository: add it back when this one is public.
+# A v* tag publishes that version to npm as "apizen", with provenance (the repository is
+# public). Trusted publishing (OIDC): npm trusts this workflow of this repository, so no token
+# is stored anywhere.
 on:
   push:
     tags: ["v*"]
@@ -29,4 +29,4 @@ jobs:
           [ "${GITHUB_REF_NAME}" = "v$version" ] || { echo "tag ${GITHUB_REF_NAME}, package.json $version"; exit 1; }
       - run: npm ci
       - run: npm test
-      - run: npm publish --access public
+      - run: npm publish --provenance --access public
